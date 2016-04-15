@@ -1,0 +1,94 @@
+<android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/imagetobeedited"
+
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    card_view:cardCornerRadius="10dp"
+    card_view:contentPadding="12dp"
+
+    card_view:cardBackgroundColor="@color/darkred"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="true"
+    android:padding="10dp"
+    card_view:cardElevation="2dp"
+    android:id="@+id/cv"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/cardview_press_selector"
+            >
+
+            <ImageView
+                android:elevation="8dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/movieicon"
+
+                android:scaleType="fitXY"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                />
+
+            <RatingBar android:id="@+id/indicator_ratingbar"
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="5dip"
+                android:numStars="5"
+                android:max="5"
+                android:stepSize="0.1"
+                android:isIndicator="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/movieicon"
+                android:layout_below="@+id/movieicon" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movietitle"
+
+                android:textSize="20sp"
+                android:textStyle="italic|bold"
+
+                android:layout_toRightOf="@+id/movieicon"
+                android:layout_alignParentTop="true"
+                android:textColor="@color/primary_text"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/moviedescr"
+
+                android:textSize="10sp"
+                android:layout_toRightOf="@+id/movieicon"
+                android:layout_below="@+id/movietitle"
+                android:textStyle="bold"
+                android:textColor="@color/White"
+                />
+            <ImageView
+                android:id="@+id/options_id"
+                android:src="@drawable/options_icon_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/indicator_ratingbar"
+                android:layout_below="@+id/moviedescr"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="220dp"
+
+               />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+

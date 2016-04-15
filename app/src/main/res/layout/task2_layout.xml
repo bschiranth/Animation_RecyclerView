@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/task2id"
+    android:transitionName="activity_transition"
+    tools:context="com.example.bschiranth.hw5_chiranth.Task2Activity">
+
+<android.support.v7.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/toolbar"
+    android:layout_alignParentTop="true"
+    android:elevation="5dp"
+    android:minHeight="?attr/actionBarSize"
+    android:background="#F44336">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="50dp"
+        android:id="@+id/image_in_toolbar"
+        android:src="@drawable/deadpool" />
+
+
+
+</android.support.v7.widget.Toolbar>
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/imagetobeedited"
+    android:id="@+id/replace_container"
+    android:layout_below="@+id/toolbar"
+    tools:context=".Task2Activity"
+    tools:ignore="MergeRootFrame"></FrameLayout>
+</RelativeLayout>
