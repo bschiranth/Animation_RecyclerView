@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);*/
 
        //final Intent intent = new Intent(this, Task2Activity.class);
-       final Intent intent;
+       final Intent intent;// intent to start new activity
         intent = new Intent(this, Task2Activity.class);
         Button button = (Button) findViewById(R.id.Button_id);
         button.setOnClickListener(new View.OnClickListener() {
